@@ -1,0 +1,35 @@
+aid: apache-derby
+name: Apache Derby
+description: >-
+  Apache Derby is an open-source relational database implemented entirely in Java. It can be embedded in Java applications or used in a client/server configuration, providing a small footprint database engine with full SQL support and JDBC compliance.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Database
+  - Relational
+  - Java
+  - Embedded
+  - SQL
+created: '2026-03-16'
+modified: '2026-03-16'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/apache-derby/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: apache-derby:apache-derby
+    name: Apache Derby
+    description: >-
+      Derby provides a standard JDBC API for database operations in both embedded and client/server modes, supporting SQL, stored procedures, triggers, and full transaction management.
+    humanURL: https://db.apache.org/derby/manuals/index.html
+    tags:
+      - JDBC
+      - SQL
+      - Java
+    properties:
+      - type: Documentation
+        url: https://db.apache.org/derby/manuals/index.html
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
