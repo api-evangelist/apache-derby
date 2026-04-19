@@ -1,0 +1,6 @@
+{
+  "tableName": "EMPLOYEES",
+  "tableSchema": "APP",
+  "tableType": "TABLE",
+  "remarks": "Employee records table"
+}

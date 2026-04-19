@@ -1,0 +1,12 @@
+{
+  "mode": "embedded",
+  "databaseName": "mydb",
+  "host": "localhost",
+  "port": 1527,
+  "user": "app",
+  "password": "secretpassword",
+  "createDatabase": "create",
+  "bootPassword": "example-bootPassword",
+  "dataEncryption": false,
+  "encryptionAlgorithm": "AES/CBC/NoPadding"
+}

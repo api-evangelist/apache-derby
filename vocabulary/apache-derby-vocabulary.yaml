@@ -1,0 +1,136 @@
+vocabulary: 1.0.0
+info:
+  provider: Apache Derby
+  description: Vocabulary for Apache Derby, the Java embedded and client/server relational database (retired 2025).
+  created: '2026-04-19'
+  modified: '2026-04-19'
+operational:
+  apis:
+  - namespace: derby-embedded
+    version: 10.17.1.0
+    baseUrl: https://mvnrepository.com/artifact/org.apache.derby/derby
+    status: deprecated
+    description: Embedded JDBC driver (org.apache.derby.jdbc.EmbeddedDriver)
+  - namespace: derby-client
+    version: 10.17.1.0
+    baseUrl: https://mvnrepository.com/artifact/org.apache.derby/derbyclient
+    status: deprecated
+    description: Network Client JDBC driver (org.apache.derby.jdbc.ClientDriver)
+  resources:
+  - name: connection
+    description: JDBC database connection
+    actions:
+    - connect
+    - disconnect
+    - begin-transaction
+    - commit
+    - rollback
+    apis:
+    - derby-embedded
+    - derby-client
+  - name: table
+    description: Relational database table
+    actions:
+    - create
+    - drop
+    - alter
+    - truncate
+    - list-metadata
+    apis:
+    - derby-embedded
+    - derby-client
+  - name: statement
+    description: SQL statement execution
+    actions:
+    - execute-query
+    - execute-update
+    - prepare
+    - batch-execute
+    apis:
+    - derby-embedded
+    - derby-client
+  - name: stored-procedure
+    description: Java-based stored procedure
+    actions:
+    - create
+    - call
+    - drop
+    apis:
+    - derby-embedded
+  - name: network-server
+    description: Derby Network Server management
+    actions:
+    - start
+    - stop
+    - get-status
+    - list-sessions
+    apis:
+    - derby-client
+  actions:
+  - name: connect
+    description: Establish JDBC database connection
+    pattern: write
+  - name: execute-query
+    description: Run a SELECT SQL statement
+    pattern: read
+  - name: execute-update
+    description: Run an INSERT/UPDATE/DELETE SQL statement
+    pattern: write
+  - name: commit
+    description: Commit the current transaction
+    pattern: write
+  - name: rollback
+    description: Roll back the current transaction
+    pattern: destructive
+  schemas:
+    core:
+    - ConnectionConfig
+    - TableInfo
+  enums:
+    mode:
+    - embedded
+    - client
+    tableType:
+    - TABLE
+    - VIEW
+    - SYSTEM TABLE
+    - SYNONYM
+  authentication:
+    schemes:
+    - JDBC Username/Password
+    - OS-based authentication
+    - LDAP authentication
+capability:
+  workflows: []
+  personas:
+  - id: java-developer
+    name: Java Developer
+    description: Uses Derby as an embedded or test database in Java applications
+  - id: dba
+    name: Database Administrator
+    description: Manages Derby Network Server instances and database configurations
+  domains:
+  - name: Embedded Databases
+    description: SQL databases embedded directly in Java application runtimes
+  - name: Test Databases
+    description: Lightweight databases used for unit and integration testing
+  namespaces: []
+  binds: []
+crossReference:
+- resource: connection
+  operations:
+  - connect
+  - commit
+  - rollback
+  workflows: []
+  personas:
+  - java-developer
+- resource: table
+  operations:
+  - create
+  - drop
+  - list-metadata
+  workflows: []
+  personas:
+  - java-developer
+  - dba

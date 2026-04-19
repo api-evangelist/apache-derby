@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/apache-derby/refs/heads/main/json-schema/apache-derby-connection-config-schema.json",
+  "title": "ConnectionConfig",
+  "description": "JDBC connection configuration for Apache Derby in embedded or client/server mode.",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "description": "Derby deployment mode.",
+      "enum": [
+        "embedded",
+        "client"
+      ],
+      "example": "embedded"
+    },
+    "databaseName": {
+      "type": "string",
+      "description": "Database name or path to create/connect to.",
+      "example": "mydb"
+    },
+    "host": {
+      "type": "string",
+      "description": "Network Server hostname (client mode only).",
+      "example": "localhost"
+    },
+    "port": {
+      "type": "integer",
+      "description": "Network Server port (client mode only).",
+      "default": 1527,
+      "example": 1527
+    },
+    "user": {
+      "type": "string",
+      "description": "Database user (when authentication is enabled).",
+      "example": "app"
+    },
+    "password": {
+      "type": "string",
+      "description": "Database password (when authentication is enabled).",
+      "example": "secretpassword"
+    },
+    "createDatabase": {
+      "type": "string",
+      "description": "Create the database if it does not exist.",
+      "enum": [
+        "create"
+      ],
+      "example": "create"
+    },
+    "bootPassword": {
+      "type": "string",
+      "description": "Boot password for encrypted databases."
+    },
+    "dataEncryption": {
+      "type": "boolean",
+      "description": "Enable data-at-rest encryption for this database.",
+      "default": false,
+      "example": false
+    },
+    "encryptionAlgorithm": {
+      "type": "string",
+      "description": "Encryption algorithm for encrypted databases.",
+      "example": "AES/CBC/NoPadding"
+    }
+  },
+  "required": [
+    "mode",
+    "databaseName"
+  ]
+}

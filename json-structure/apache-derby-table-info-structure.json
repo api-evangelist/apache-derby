@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/apache-derby/refs/heads/main/json-structure/apache-derby-table-info-structure.json",
+  "name": "TableInfo",
+  "description": "Metadata about a table in an Apache Derby database, as returned by JDBC DatabaseMetaData.getTables().",
+  "type": "object",
+  "properties": {
+    "tableName": {
+      "type": "string",
+      "description": "Name of the table.",
+      "example": "EMPLOYEES"
+    },
+    "tableSchema": {
+      "type": "string",
+      "description": "Schema (owner) of the table.",
+      "example": "APP"
+    },
+    "tableCatalog": {
+      "type": "string",
+      "description": "Catalog of the table (always null in Derby).",
+      "example": null
+    },
+    "tableType": {
+      "type": "string",
+      "description": "Type of table object.",
+      "enum": [
+        "TABLE",
+        "VIEW",
+        "SYSTEM TABLE",
+        "SYNONYM"
+      ],
+      "example": "TABLE"
+    },
+    "remarks": {
+      "type": "string",
+      "description": "Table comment if defined.",
+      "example": "Employee records table"
+    }
+  },
+  "required": [
+    "tableName",
+    "tableType"
+  ]
+}

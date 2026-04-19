@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "derby": "https://db.apache.org/derby/schema/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ConnectionConfig": "derby:ConnectionConfig",
+    "TableInfo": "derby:TableInfo",
+    "bootPassword": {
+      "@id": "derby:bootPassword",
+      "@type": "xsd:string"
+    },
+    "createDatabase": {
+      "@id": "derby:createDatabase",
+      "@type": "xsd:string"
+    },
+    "dataEncryption": {
+      "@id": "derby:dataEncryption",
+      "@type": "xsd:boolean"
+    },
+    "databaseName": {
+      "@id": "derby:databaseName",
+      "@type": "xsd:string"
+    },
+    "encryptionAlgorithm": {
+      "@id": "derby:encryptionAlgorithm",
+      "@type": "xsd:string"
+    },
+    "host": {
+      "@id": "derby:host",
+      "@type": "xsd:string"
+    },
+    "mode": {
+      "@id": "derby:mode",
+      "@type": "xsd:string"
+    },
+    "password": {
+      "@id": "derby:password",
+      "@type": "xsd:string"
+    },
+    "port": {
+      "@id": "derby:port",
+      "@type": "xsd:integer"
+    },
+    "remarks": {
+      "@id": "derby:remarks",
+      "@type": "xsd:string"
+    },
+    "tableCatalog": {
+      "@id": "derby:tableCatalog",
+      "@type": "xsd:string"
+    },
+    "tableName": {
+      "@id": "derby:tableName",
+      "@type": "xsd:string"
+    },
+    "tableSchema": {
+      "@id": "derby:tableSchema",
+      "@type": "xsd:string"
+    },
+    "tableType": {
+      "@id": "derby:tableType",
+      "@type": "xsd:string"
+    },
+    "user": {
+      "@id": "derby:user",
+      "@type": "xsd:string"
+    }
+  }
+}
