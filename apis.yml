@@ -45,13 +45,13 @@ apis:
     url: https://db.apache.org/derby/javadoc/publishedapi/jdbc4/
   - type: GitHubRepository
     url: https://github.com/apache/derby
-  - type: SDK
+  - type: SDKs
     url: https://mvnrepository.com/artifact/org.apache.derby/derby
     title: derby (Maven Central)
-  - type: SDK
+  - type: SDKs
     url: https://mvnrepository.com/artifact/org.apache.derby/derbyclient
     title: derbyclient (Maven Central)
-  - type: SDK
+  - type: SDKs
     url: https://mvnrepository.com/artifact/org.apache.derby/derbynet
     title: derbynet Network Server (Maven Central)
   - type: JSONSchema
@@ -66,9 +66,9 @@ apis:
     url: https://raw.githubusercontent.com/api-evangelist/apache-derby/refs/heads/main/json-structure/apache-derby-table-info-structure.json
   - type: JSONLD
     url: https://raw.githubusercontent.com/api-evangelist/apache-derby/refs/heads/main/json-ld/apache-derby-context.jsonld
-  - type: Example
+  - type: Examples
     url: https://raw.githubusercontent.com/api-evangelist/apache-derby/refs/heads/main/examples/apache-derby-connection-config-example.json
-  - type: Example
+  - type: Examples
     url: https://raw.githubusercontent.com/api-evangelist/apache-derby/refs/heads/main/examples/apache-derby-table-info-example.json
 maintainers:
 - FN: Kin Lane
