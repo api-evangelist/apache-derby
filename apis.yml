@@ -74,6 +74,10 @@ maintainers:
 - FN: Kin Lane
   email: info@apievangelist.com
 common:
+- type: VulnerabilityDisclosure
+  url: security/apache-derby-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/apache-derby-domain-security.yml
 - type: Portal
   url: https://db.apache.org/derby/
 - type: Documentation
