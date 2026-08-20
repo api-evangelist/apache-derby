@@ -26,6 +26,15 @@ tags:
 - Embedded
 - Java
 - JDBC
+- Open-Source
+- Relational
+- SQL
+tags_raw:
+- Apache
+- Database
+- Embedded
+- Java
+- JDBC
 - Open Source
 - Relational
 - SQL
@@ -42,6 +51,13 @@ apis:
     stored procedures, triggers, views, indexes, and complete ACID transaction management. The Derby Network Server also exposes a simple text-based administrative protocol.
   humanURL: https://db.apache.org/derby/manuals/index.html
   tags:
+  - Embedded
+  - Java
+  - JDBC
+  - Network Server
+  - SQL
+  - Transaction
+  tags_raw:
   - Embedded
   - Java
   - JDBC
