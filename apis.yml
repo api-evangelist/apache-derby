@@ -1,8 +1,9 @@
 aid: apache-derby
 name: Apache Derby
-description: >-
-  Apache Derby is an open-source relational database implemented entirely in Java, formerly governed by the Apache Software Foundation (retired October 2025). It provides a small-footprint (~3.5MB) database
-  engine with full SQL support, JDBC compliance, ACID transactions, stored procedures, and triggers. Derby operates in both embedded mode (bundled inside Java applications) and client/server mode via the
+description: Apache Derby is an open-source relational database implemented entirely in Java, formerly
+  governed by the Apache Software Foundation (retired October 2025). It provides a small-footprint (~3.5MB)
+  database engine with full SQL support, JDBC compliance, ACID transactions, stored procedures, and triggers.
+  Derby operates in both embedded mode (bundled inside Java applications) and client/server mode via the
   Derby Network Server.
 type: Index
 deliveryModel:
@@ -51,16 +52,16 @@ tags_raw:
 - Relational
 - SQL
 created: '2026-03-16'
-modified: '2026-04-19'
-url: >-
-  https://raw.githubusercontent.com/api-evangelist/apache-derby/refs/heads/main/apis.yml
+modified: '2026-09-16'
+url: https://raw.githubusercontent.com/api-evangelist/apache-derby/refs/heads/main/apis.yml
 specificationVersion: '0.23'
 apis:
 - aid: apache-derby:apache-derby
   name: Apache Derby
-  description: >-
-    Derby provides a standard JDBC API for database operations in both embedded (org.apache.derby.jdbc.EmbeddedDriver) and client/server (org.apache.derby.jdbc.ClientDriver) modes, supporting full SQL,
-    stored procedures, triggers, views, indexes, and complete ACID transaction management. The Derby Network Server also exposes a simple text-based administrative protocol.
+  description: Derby provides a standard JDBC API for database operations in both embedded (org.apache.derby.jdbc.EmbeddedDriver)
+    and client/server (org.apache.derby.jdbc.ClientDriver) modes, supporting full SQL, stored procedures,
+    triggers, views, indexes, and complete ACID transaction management. The Derby Network Server also
+    exposes a simple text-based administrative protocol.
   humanURL: https://db.apache.org/derby/manuals/index.html
   tags:
   - Embedded
@@ -114,6 +115,8 @@ maintainers:
 - FN: Kin Lane
   email: info@apievangelist.com
 common:
+- type: Website
+  url: https://apache.org
 - type: CodeOfConduct
   url: https://github.com/apache/.github/blob/main/.github/CODE_OF_CONDUCT.md
 - type: License
@@ -138,25 +141,34 @@ common:
 - type: Features
   data:
   - name: Embedded Mode
-    description: Derby can be embedded directly in Java applications as a library, providing a zero-administration database with no separate server process required.
+    description: Derby can be embedded directly in Java applications as a library, providing a zero-administration
+      database with no separate server process required.
   - name: Client/Server Mode
-    description: Derby Network Server supports multiple concurrent JDBC clients connecting over TCP/IP using the Derby Network Client driver.
+    description: Derby Network Server supports multiple concurrent JDBC clients connecting over TCP/IP
+      using the Derby Network Client driver.
   - name: Full SQL Support
-    description: Supports ANSI SQL-92 with extensions including subqueries, joins, constraints, triggers, views, stored procedures, and user-defined functions.
+    description: Supports ANSI SQL-92 with extensions including subqueries, joins, constraints, triggers,
+      views, stored procedures, and user-defined functions.
   - name: ACID Transactions
-    description: Full ACID transaction support with row-level locking, MVCC-style isolation levels, and savepoints.
+    description: Full ACID transaction support with row-level locking, MVCC-style isolation levels, and
+      savepoints.
   - name: Small Footprint
-    description: The base Derby engine and embedded JDBC driver is approximately 3.5MB, making it suitable for desktop and embedded applications.
+    description: The base Derby engine and embedded JDBC driver is approximately 3.5MB, making it suitable
+      for desktop and embedded applications.
   - name: Java Stored Procedures
-    description: Supports Java-based stored procedures and functions callable directly from SQL using standard JDBC interfaces.
+    description: Supports Java-based stored procedures and functions callable directly from SQL using
+      standard JDBC interfaces.
 - type: UseCases
   data:
   - name: Embedded Application Database
-    description: Embed Derby in desktop Java applications, IDEs, or tools that need a local SQL database without a separate server.
+    description: Embed Derby in desktop Java applications, IDEs, or tools that need a local SQL database
+      without a separate server.
   - name: Unit and Integration Testing
-    description: Use Derby as an in-memory or on-disk test database for Java application integration tests with JDBC.
+    description: Use Derby as an in-memory or on-disk test database for Java application integration tests
+      with JDBC.
   - name: Lightweight Development Database
-    description: Use Derby as a development database when production uses a heavier RDBMS, without installing MySQL or PostgreSQL.
+    description: Use Derby as a development database when production uses a heavier RDBMS, without installing
+      MySQL or PostgreSQL.
   - name: Data Migration and ETL
     description: Use Derby as a staging database for ETL processes in Java-based data pipelines.
 - type: Integrations
