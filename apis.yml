@@ -39,7 +39,7 @@ tags:
 - Embedded
 - Java
 - JDBC
-- Open-Source
+- Open Source
 - Relational
 - SQL
 tags_raw:
@@ -51,6 +51,7 @@ tags_raw:
 - Open Source
 - Relational
 - SQL
+- Open-Source
 created: '2026-03-16'
 modified: '2026-09-16'
 url: https://raw.githubusercontent.com/api-evangelist/apache-derby/refs/heads/main/apis.yml
